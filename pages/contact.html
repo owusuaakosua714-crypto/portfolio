@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akosua Owusua | Contact Me</title>
+    <script src="https://kit.fontawesome.com/17eac40b74.js"></script>
+    <link rel="stylesheet" href="../src/style.css">
+</head>
+
+<body class="contact-page">
+
+    <!-- NAVBAR -->
+    <header class="contact-navbar">
+        <div class="contact-nav-container">
+            <a href="../index.html" class="contact-logo">
+                AO<span class="contact-logo-dot">.</span> <span class="contact-logo-name">Akosua <span
+                        class="highlight-gold">Owusua</span></span>
+            </a>
+
+            <!-- Mobile Hamburger Button -->
+            <button class="contact-mobile-menu-btn" id="contact-mobile-menu-btn" aria-label="Toggle navigation menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <nav class="contact-nav-links" id="contact-nav-links">
+                <a href="../index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="project.html">Projects</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+
+            <a href="https://owusuaakosua714-crypto.github.io/T4G_CV/"
+                class="contact-btn contact-btn-primary contact-nav-cv" target="_blank" rel="noopener noreferrer">
+                View My CV ↗
+            </a>
+        </div>
+    </header>
+
+    <!-- CONTACT HERO -->
+    <section class="contact-hero">
+        <div class="contact-container contact-hero-card">
+            <div class="contact-hero-content">
+                <p class="contact-subtitle">LET'S CONNECT</p>
+                <h1 class="contact-hero-title">Let's Work<br><span class="highlight-gold">Together</span></h1>
+                <p class="contact-hero-desc">
+                    Have a project, opportunity, or idea you'd like to discuss? I'd love to hear from you. Feel free to
+                    send me a message.
+                </p>
+            </div>
+
+            <div class="contact-hero-graphic">
+
+                <img src="../images/contact page.jpeg" alt="Illustration of woman working on laptop"
+                    class="contact-hero-img"
+                    onerror="this.src='https://via.placeholder.com/380x280/FDF8F3/062E2B?text=Contact+Illustration'">
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN CONTACT SECTION -->
+    <section class="contact-section">
+        <div class="contact-container contact-grid-two-col">
+
+            <!-- LEFT: GET IN TOUCH -->
+            <div class="contact-card contact-info-card">
+                <h2 class="contact-card-title">GET IN TOUCH</h2>
+
+                <div class="contact-info-list">
+
+                    <div class="contact-info-item">
+                        <span class="contact-icon-box">✉</span>
+                        <div>
+                            <span class="contact-label">Email</span>
+                            <!-- INSERT YOUR REAL EMAIL HERE -->
+                            <a href="mailto:owusuaakosua714@gmail.com"
+                                class="contact-value">owusuaakosua714@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <span class="contact-icon-box">in</span>
+                        <div>
+                            <span class="contact-label">LinkedIn</span>
+                            <!-- INSERT YOUR REAL LINKEDIN URL HERE -->
+                            <a href="https://linkedin.com/in/akosua-owusua" target="_blank" rel="noopener noreferrer"
+                                class="contact-value">linkedin.com/in/akosua-owusua</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <span class="contact-icon-box">💻</span>
+                        <div>
+                            <span class="contact-label">GitHub</span>
+                            <!-- INSERT YOUR REAL GITHUB URL HERE -->
+                            <a href="https://github.com/owusuaakosua714-crypto" target="_blank"
+                                rel="noopener noreferrer" class="contact-value">github.com/owusuaakosua714-crypto</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <span class="contact-icon-box">📍</span>
+                        <div>
+                            <span class="contact-label">Location</span>
+                            <!-- INSERT YOUR LOCATION HERE -->
+                            <span class="contact-value">Accra, Ghana</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <hr class="contact-divider">
+
+                <div class="contact-open-to">
+                    <h3 class="contact-open-title">CURRENTLY OPEN TO:</h3>
+                    <ul class="contact-check-list">
+                        <li><span>✔</span> Internship opportunities</li>
+                        <li><span>✔</span> Front-end projects</li>
+                        <li><span>✔</span> Collaborations</li>
+                        <li><span>✔</span> Learning opportunities</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- RIGHT: SEND ME A MESSAGE (FORM) -->
+            <div class="contact-card contact-form-card">
+                <h2 class="contact-card-title">SEND ME A MESSAGE</h2>
+
+                <form id="contactForm" class="contact-form" novalidate>
+
+                    <div class="contact-form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name">
+                        <span class="contact-error-msg" id="nameError"></span>
+                    </div>
+
+                    <div class="contact-form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email">
+                        <span class="contact-error-msg" id="emailError"></span>
+                    </div>
+
+                    <div class="contact-form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="What is this about?">
+                        <span class="contact-error-msg" id="subjectError"></span>
+                    </div>
+
+                    <div class="contact-form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5"
+                            placeholder="Write your message here..."></textarea>
+                        <span class="contact-error-msg" id="messageError"></span>
+                    </div>
+
+                    <button type="submit" id="contactSubmitBtn" class="contact-btn contact-btn-dark contact-submit-btn">
+                        ✈ Send Message →
+                    </button>
+
+                    <p class="contact-privacy-note">🔒 Your information is safe with me. I'll get back to you as soon as
+                        possible!</p>
+
+                    <div id="contactFormStatus" class="contact-form-status" aria-live="polite"></div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- WHAT CAN WE TALK ABOUT? -->
+    <section class="contact-topics-section">
+        <div class="contact-container">
+            <h2 class="contact-section-heading">WHAT CAN WE TALK ABOUT?</h2>
+
+            <div class="contact-topics-grid">
+
+                <div class="contact-topic-card">
+                    <div class="contact-topic-icon">&lt;/&gt;</div>
+                    <h3>Web Development</h3>
+                    <p>Front-end websites, interactive features and beautiful user experiences.</p>
+                </div>
+
+                <div class="contact-topic-card">
+                    <div class="contact-topic-icon">🎨</div>
+                    <h3>UI / UX Design</h3>
+                    <p>Figma designs, wireframes, prototypes and user interface design.</p>
+                </div>
+
+                <div class="contact-topic-card">
+                    <div class="contact-topic-icon">👥</div>
+                    <h3>Collaboration</h3>
+                    <p>Team projects, creative ideas and building impactful solutions.</p>
+                </div>
+
+                <div class="contact-topic-card">
+                    <div class="contact-topic-icon">💼</div>
+                    <h3>Opportunities</h3>
+                    <p>Internships, volunteering and other learning opportunities.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="contact-cta-section">
+        <div class="contact-container contact-cta-card">
+            <div>
+                <h2>Have an idea in mind?</h2>
+                <p>Let's turn it into something meaningful together.</p>
+            </div>
+            <a href="#contactForm" id="contactCtaBtn" class="contact-btn contact-btn-dark">Get In Touch →</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="contact-footer">
+        <div class="contact-container contact-footer-grid">
+
+            <div class="contact-footer-brand">
+                <a href="../index.html" class="contact-logo contact-footer-logo">
+                    AO<span class="contact-logo-dot">.</span>
+                </a>
+                <p>Building solutions, creating experiences, and growing every day.</p>
+            </div>
+
+            <div class="contact-footer-info">
+                <div>
+                    <span class="contact-footer-label">Email</span>
+                    <!-- INSERT YOUR REAL EMAIL HERE -->
+                    <a href="mailto:owusuaakosua714@gmail.com">owusuaakosua714@gmail.com</a>
+                </div>
+                <div>
+                    <span class="contact-footer-label">LinkedIn</span>
+                    <!-- INSERT YOUR REAL LINKEDIN URL HERE -->
+                    <a href="https://linkedin.com/in/akosua-owusua" target="_blank"
+                        rel="noopener">linkedin.com/in/akosua-owusua</a>
+                </div>
+            </div>
+
+            <div class="contact-footer-info">
+                <div>
+                    <span class="contact-footer-label">GitHub</span>
+                    <a href="https://github.com/owusuaakosua714-crypto" target="_blank"
+                        rel="noopener">github.com/owusuaakosua714-crypto</a>
+                </div>
+                <div>
+                    <span class="contact-footer-label">Location</span>
+                    <span>Accra, Ghana</span>
+                </div>
+            </div>
+
+            <div class="contact-footer-social">
+                <span class="contact-footer-label">Let's connect</span>
+                <div class="contact-social-icons">
+                    <!-- INSERT YOUR REAL SOCIAL LINKS HERE -->
+                    <a href="https://linkedin.com/in/akosua-owusua" target="_blank" aria-label="LinkedIn">in</a>
+                    <a href="https://github.com/owusuaakosua714-crypto" target="_blank" aria-label="GitHub">💻</a>
+                    <a href="mailto:owusuaakosua714@gmail.com" aria-label="Email">✉</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="contact-container contact-footer-bottom">
+            <p>&copy; 2026 Akosua Owusua. All rights reserved.</p>
+            <button id="contactBackToTop" class="contact-back-to-top">Back to Top ↑</button>
+        </div>
+    </footer>
+
+    <!-- EmailJS Official Browser SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <!-- Page Scripts -->
+    <script src="../src/script.js"></script>
+    <script src="../src/email.js"></script>
+</body>
+
+</html>
