@@ -459,7 +459,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ------------------------------------------------------------------------
-  // 2. MOBILE HAMBURGER MENU (CONTACT PAGE ONLY)
+  // 2. MOBILE HAMBURGER MENU
   // ------------------------------------------------------------------------
   if (contactMobileBtn) {
     const navLinks = document.getElementById('contact-nav-links');
@@ -486,7 +486,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ------------------------------------------------------------------------
-  // 3. BACK TO TOP BUTTON (CONTACT PAGE ONLY)
+  // 3. BACK TO TOP BUTTON
   // ------------------------------------------------------------------------
   if (contactBackToTop) {
     contactBackToTop.addEventListener('click', () => {

@@ -38,6 +38,10 @@
     opacity: 0.8;
 }
 
+.home-page-scoped .contact-nav-cv {
+  color: #ffffff;
+}
+
 /* Typography Overrides */
 .home-page-scoped h1, 
 .home-page-scoped h2, 
